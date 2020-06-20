@@ -1,0 +1,20 @@
+// Reset CSS:
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background-color: #000000;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
