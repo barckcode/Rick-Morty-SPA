@@ -13,10 +13,16 @@
   }
 
   &__nav {
-    margin-top: 8rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
 
-    a {
-      color: $primary-color;
+    &-text {
+      padding-right: 1rem;
+    }
+
+    &-img {
+      width: 18px;
     }
   }
 }

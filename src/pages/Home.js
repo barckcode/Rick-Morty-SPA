@@ -6,6 +6,7 @@ import Title from '../components/layout/Title'
 
 // Assets:
 import Hero from '../assets/home.png'
+import Arrow from '../assets/icons/arrow.svg'
 
 const Home = () => {
   return (
@@ -19,8 +20,9 @@ const Home = () => {
       </figure>
 
       <nav className='home__nav'>
-        <Link className='home__nav-link' to='/characters'>
-          Characters
+        <Link className='btn' to='/characters'>
+          <h3 className='home__nav-text'>Characters</h3>
+          <img className='home__nav-img' src={Arrow} alt='icons' />
         </Link>
       </nav>
     </main>
