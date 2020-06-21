@@ -28,9 +28,10 @@
 // Button:
 .btn{
   display: flex;
+  align-items: center;
   margin: 15px 15px 0;
   padding: .6em 1.1em;
-  @include fontSize(26);
+  @include fontSize(18);
   text-decoration: none;
   outline: none;
   color: $dark-color;

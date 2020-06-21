@@ -10,12 +10,14 @@ import '../styles/App.scss'
 
 // Components:
 import Home from '../pages/Home'
+import Characters from '../pages/Characters'
 
 const App = () => {
   return (
     <Router>
       <Switch>
         <Route exact path='/' component={Home} />
+        <Route exact path='/characters' component={Characters} />
       </Switch>
     </Router>
   )
