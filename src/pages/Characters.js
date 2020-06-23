@@ -16,9 +16,11 @@ const Characters = () => {
   return (
     <div className='characters'>
       <Layout>
-        <ListCharacters
-          data={data.results}
-        />
+        <section className='characters__container' >
+          <ListCharacters
+            data={data.results}
+          />
+        </section>
       </Layout>
     </div>
   )
