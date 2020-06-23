@@ -1,28 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+
+// Custom Hook:
+import useGetData from '../hooks/useGetData'
 
 // Components:
 import Layout from '../components/layout/Layout'
+import ListCharacters from '../components/ListCharacters'
 
 const Characters = () => {
 
-  const URL = 'https://rickandmortyapi.com/api/character/?page=1'
-
-  const [ data, setDataState ] = useState({})
-
-  useEffect(() => {
-    fetch(URL)
-      .then(response => response.json())
-      .then(dataAPI => setDataState(dataAPI))
-  }, [])
+  const data = useGetData()
 
   if (!data.results) return null // Añadir Loading...
 
   return (
     <div className='characters'>
       <Layout>
-        {data.results.map(character => (
-          <img src={character.image} />
-        ))}
+        <ListCharacters
+          data={data.results}
+        />
       </Layout>
     </div>
   )
