@@ -9,7 +9,7 @@ import Layout from '../components/layout/Layout'
 
 const Character = () => {
 
-  let id = useLocation().pathname.slice(12)
+  let id = useLocation().pathname.slice(27)
   const API_URL = `https://rickandmortyapi.com/api/character/${id}`
 
   // Get Data Custom Hooks
