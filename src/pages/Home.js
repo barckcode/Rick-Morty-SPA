@@ -17,7 +17,7 @@ const Home = () => {
         </figure>
 
         <nav className='home__nav'>
-          <Link className='btn' to='/characters'>
+          <Link className='btn' to='/Rick-Morty-SPA/characters'>
             <h3 className='home__nav-text'>Characters</h3>
             <img className='home__nav-img' src={Arrow} alt='icons' />
           </Link>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const ListCharacters = ({ results }) => (
   results.map(character => (
     <article className='characters__card' key={character.id}>
-      <Link to={`/characters/${character.id}`}>
+      <Link to={`/Rick-Morty-SPA/characters/${character.id}`}>
         <figure>
           <img
             className='characters__card-img'
