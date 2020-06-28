@@ -17,9 +17,9 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/characters' component={Characters} />
-        <Route exact path='/characters/:id' component={Character} />
+        <Route exact path='/Rick-Morty-SPA' component={Home} />
+        <Route exact path='/Rick-Morty-SPA/characters' component={Characters} />
+        <Route exact path='/Rick-Morty-SPA/characters/:id' component={Character} />
       </Switch>
     </Router>
   )
