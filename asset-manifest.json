@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Rick-Morty-SPA/static/css/main.356952ec.chunk.css",
-    "main.js": "/Rick-Morty-SPA/static/js/main.314b44c3.chunk.js",
-    "main.js.map": "/Rick-Morty-SPA/static/js/main.314b44c3.chunk.js.map",
+    "main.js": "/Rick-Morty-SPA/static/js/main.fe26832a.chunk.js",
+    "main.js.map": "/Rick-Morty-SPA/static/js/main.fe26832a.chunk.js.map",
     "runtime-main.js": "/Rick-Morty-SPA/static/js/runtime-main.0898524f.js",
     "runtime-main.js.map": "/Rick-Morty-SPA/static/js/runtime-main.0898524f.js.map",
     "static/js/2.8d4e9f4b.chunk.js": "/Rick-Morty-SPA/static/js/2.8d4e9f4b.chunk.js",
     "static/js/2.8d4e9f4b.chunk.js.map": "/Rick-Morty-SPA/static/js/2.8d4e9f4b.chunk.js.map",
     "index.html": "/Rick-Morty-SPA/index.html",
-    "precache-manifest.f0bdab873c066be52adb2321f6e2c7ed.js": "/Rick-Morty-SPA/precache-manifest.f0bdab873c066be52adb2321f6e2c7ed.js",
+    "precache-manifest.28f57d7fb6dfa4bb2efbb9eb11492c7a.js": "/Rick-Morty-SPA/precache-manifest.28f57d7fb6dfa4bb2efbb9eb11492c7a.js",
     "service-worker.js": "/Rick-Morty-SPA/service-worker.js",
     "static/css/main.356952ec.chunk.css.map": "/Rick-Morty-SPA/static/css/main.356952ec.chunk.css.map",
     "static/js/2.8d4e9f4b.chunk.js.LICENSE.txt": "/Rick-Morty-SPA/static/js/2.8d4e9f4b.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.0898524f.js",
     "static/js/2.8d4e9f4b.chunk.js",
     "static/css/main.356952ec.chunk.css",
-    "static/js/main.314b44c3.chunk.js"
+    "static/js/main.fe26832a.chunk.js"
   ]
 }
