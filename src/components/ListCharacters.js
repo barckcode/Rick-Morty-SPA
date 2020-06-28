@@ -1,7 +1,7 @@
 import React from 'react'
 
-const ListCharacters = ({ data }) => (
-  data.map(character => (
+const ListCharacters = ({ results }) => (
+  results.map(character => (
     <article className='characters__card' key={character.id}>
       <figure>
         <img

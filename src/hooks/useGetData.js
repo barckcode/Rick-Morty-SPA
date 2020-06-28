@@ -1,22 +1,14 @@
 import { useState, useEffect } from 'react'
 
-const useGetData = ({ apiURL }) => {
-
-  let API
-  const URL = 'https://rickandmortyapi.com/api/character/?page=1'
-  if (apiURL) {
-    API = apiURL
-  } else {
-    API = URL
-  }
+const useGetData = (URL) => {
 
   const [ data, setData ] = useState({})
 
   useEffect(() => {
-    fetch(API)
+    fetch(URL)
       .then(response => response.json())
       .then(dataAPI => setData(dataAPI))
-  }, [API])
+  }, [URL])
 
   return data
 }

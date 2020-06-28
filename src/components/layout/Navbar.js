@@ -1,15 +1,45 @@
 import React from 'react'
 
-// Custom Hook:
-import useGetData from '../../hooks/useGetData'
+const Navbar = ({ info, setURL }) => {
 
-const Navbar = () => {
+  const handleButton = (apiURL) => {
+    setURL(apiURL)
+  }
 
-  const data = useGetData()
+  const { prev, next } = info
 
   return (
     <nav className='navbar'>
-      <p>Navbar</p>
+      {
+        prev === null
+        ?
+          null
+        :
+          (
+            <button
+              className='btn'
+              type='button'
+              onClick={() => handleButton(prev)}
+            >
+              <h4>Prev</h4>
+            </button>
+          )
+      }
+      {
+        next === null
+        ?
+          null
+        :
+          (
+            <button
+              className='btn'
+              type='button'
+              onClick={() => handleButton(next)}
+            >
+              <h4>Next</h4>
+            </button>
+          )
+      }
     </nav>
   )
 }

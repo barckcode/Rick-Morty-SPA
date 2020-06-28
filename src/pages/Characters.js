@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // Custom Hook:
 import useGetData from '../hooks/useGetData'
@@ -6,34 +6,35 @@ import useGetData from '../hooks/useGetData'
 // Components:
 import Layout from '../components/layout/Layout'
 import ListCharacters from '../components/ListCharacters'
-// import Navbar from '../components/layout/Navbar'
+import Navbar from '../components/layout/Navbar'
 
 const Characters = () => {
 
-  let apiURL
-  const data = useGetData(apiURL ? apiURL : "")
+  const API_URL = 'https://rickandmortyapi.com/api/character/'
+  const [ url, setURL ] = useState(API_URL)
+
+  console.log(url)
+  // Get Data Custom Hooks
+  const data = useGetData(url)
 
   if (!data.results) return null // Añadir Loading...
 
-  const handleNext = () => {
-    const URL = data.info.next
-    apiURL = URL
-  }
+  // Destructing Data
+  const { info , results } = data
 
   return (
     <div className='characters'>
       <Layout>
         <section className='characters__container' >
           <ListCharacters
-            data={data.results}
+            results={results}
           />
         </section>
 
-        <nav>
-          <button type='button' onClick={() => handleNext()} >
-            Next
-          </button>
-        </nav>
+        <Navbar
+          info={info}
+          setURL={setURL}
+        />
       </Layout>
     </div>
   )
