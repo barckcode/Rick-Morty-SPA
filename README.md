@@ -3,7 +3,7 @@
 ### API utilizada:
 API REST: https://rickandmortyapi.com/documentation/#rest
 
-Endpoints de la API:
+Endpoints de la API utilizados:
 - https://rickandmortyapi.com/api/character/?page=${numero_de_pagina}
 - https://rickandmortyapi.com/api/character/${id_del_personaje}
 
@@ -13,3 +13,11 @@ Endpoints de la API:
 | / | Home |
 | /characters | Characters |
 | /characters/:id | Character |
+
+### To-do List
+- [x] Home
+- [x] Characters
+- [x] Character
+- [x] Responsive
+- [ ] Lazy Loading
+- [ ] Improve UI
