@@ -13,11 +13,10 @@ const Characters = () => {
   const API_URL = 'https://rickandmortyapi.com/api/character/'
   const [ url, setURL ] = useState(API_URL)
 
-  console.log(url)
   // Get Data Custom Hooks
   const data = useGetData(url)
 
-  if (!data.results) return null // Añadir Loading...
+  if (!data.results) return null // Add Loading...
 
   // Destructing Data
   const { info , results } = data

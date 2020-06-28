@@ -1,15 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ListCharacters = ({ results }) => (
   results.map(character => (
     <article className='characters__card' key={character.id}>
-      <figure>
-        <img
-          className='characters__card-img'
-          src={character.image}
-          alt={character.name}
-        />
-      </figure>
+      <Link to={`/characters/${character.id}`}>
+        <figure>
+          <img
+            className='characters__card-img'
+            src={character.image}
+            alt={character.name}
+          />
+        </figure>
+      </Link>
 
       <div className='characters__card-description'>
         <h3>{character.name}</h3>
