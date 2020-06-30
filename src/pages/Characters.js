@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 // Custom Hook:
 import useGetData from '../hooks/useGetData'
@@ -10,11 +10,8 @@ import Navbar from '../components/layout/Navbar'
 
 const Characters = () => {
 
-  const API_URL = 'https://rickandmortyapi.com/api/character/'
-  const [ url, setURL ] = useState(API_URL)
-
   // Get Data Custom Hooks
-  const data = useGetData(url)
+  const [ data, setUrl ] = useGetData()
 
   if (!data.results) return null // Add Loading...
 
@@ -32,7 +29,7 @@ const Characters = () => {
 
         <Navbar
           info={info}
-          setURL={setURL}
+          setUrl={setUrl}
         />
       </Layout>
     </div>

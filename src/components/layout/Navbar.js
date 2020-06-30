@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Navbar = ({ info, setURL }) => {
+// Components:
+import Button from './Button'
 
-  const handleButton = (apiURL) => {
-    setURL(apiURL)
+const Navbar = ({ info, setUrl }) => {
+
+  const handleClick = (location) => {
+    setUrl(location)
   }
 
   const { prev, next } = info
@@ -16,13 +19,11 @@ const Navbar = ({ info, setURL }) => {
           null
         :
           (
-            <button
-              className='btn'
-              type='button'
-              onClick={() => handleButton(prev)}
-            >
-              <h4>Prev</h4>
-            </button>
+            <Button
+              text={'Prev'}
+              handleClick={handleClick}
+              location={prev}
+            />
           )
       }
       {
@@ -31,13 +32,11 @@ const Navbar = ({ info, setURL }) => {
           null
         :
           (
-            <button
-              className='btn'
-              type='button'
-              onClick={() => handleButton(next)}
-            >
-              <h4>Next</h4>
-            </button>
+            <Button
+              text={'Next'}
+              handleClick={handleClick}
+              location={next}
+            />
           )
       }
     </nav>
