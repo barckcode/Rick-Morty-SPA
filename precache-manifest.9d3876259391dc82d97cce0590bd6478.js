@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0cb6e857f568b8692de8a0491d394e9",
+    "revision": "a8ca98284f6598ead7ab875369a7c509",
     "url": "/Rick-Morty-SPA/index.html"
   },
   {
-    "revision": "362ef929b9daab95efdb",
-    "url": "/Rick-Morty-SPA/static/css/main.356952ec.chunk.css"
+    "revision": "c64d7274652dba419549",
+    "url": "/Rick-Morty-SPA/static/css/main.a7defbfe.chunk.css"
   },
   {
-    "revision": "2da83753549bf6fde073",
-    "url": "/Rick-Morty-SPA/static/js/2.8d4e9f4b.chunk.js"
+    "revision": "ee295c08b88356eb277a",
+    "url": "/Rick-Morty-SPA/static/js/2.817f9dfe.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Rick-Morty-SPA/static/js/2.8d4e9f4b.chunk.js.LICENSE.txt"
+    "url": "/Rick-Morty-SPA/static/js/2.817f9dfe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "362ef929b9daab95efdb",
-    "url": "/Rick-Morty-SPA/static/js/main.687d98a4.chunk.js"
+    "revision": "c64d7274652dba419549",
+    "url": "/Rick-Morty-SPA/static/js/main.ca7bb699.chunk.js"
   },
   {
     "revision": "d38d2c81844d62cceaaa",
